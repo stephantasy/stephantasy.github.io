@@ -1,0 +1,176 @@
+body{	
+	font: 100% georgia, serif;
+	line-height: 2em;
+	margin: 0; 
+	padding: 0;	
+    background: #B1855B;
+}
+
+h1{
+	font-size:250%;
+	color:#00be00;
+	line-height: 2em;
+}
+
+/* Table specifications */
+table{
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+}
+tr{
+	margin: 0px;
+	padding: 0px;
+}
+td{
+	margin: 0px;
+	padding: 0px;	
+}
+td img{
+	display:block;
+}
+
+
+.title{
+	text-align: center;	
+	padding: 20px 0px 5px 0px;		
+	background: transparent url(../images/img/Pichon.png) no-repeat center right 100px;	
+	background-color: #b1e5fd;	/*Bleu ciel*/
+}
+
+.lesRayons{
+	float:left;	
+    position: absolute;
+    left:0;
+	top:458px;
+	pointer-events:none;	/* Pour ne pas prendre en compte les clics */
+}
+
+/*
+.home{
+	vertical-align: left;
+	float: left;
+}
+.about{
+	vertical-align: right;
+	float: right;
+}
+*/
+
+.welcome{
+	text-align: center;
+	background-color: #b1e5fd;	/*Bleu ciel*/
+	padding:15px;
+}
+
+.cadrePuzzleHaut{
+	text-align: center;
+	height: 120px;
+	padding: 10px 15px 30px 15px;	
+	white-space: nowrap;	/* Pour éviter que les pièces aillent à la ligne lorsqu'on réduit la fenêtre */
+	overflow: auto;			/* Add a scrollbar if the window is too small */
+	
+	background: transparent url(../images/img/Vague.png) repeat-x bottom;
+	background-color: #b1e5fd;	/*Bleu ciel*/
+}
+
+.Underwater{
+	padding: 15px 0px 0px 0px;
+	background: linear-gradient(#55C1F2, #3a7bff); /* Sous l'eau */
+}
+
+.cadrePuzzleBas{
+	text-align: center;
+	padding:10px;
+	height:304px;
+	background: transparent url(../images/img/Cadre.png) no-repeat center;
+}
+
+.tablePuzzleBas{
+	margin: auto;	/* Pour centrer la table */
+	
+}
+.resetButtonCase{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.leCoffre{
+	float:right;
+    position: absolute;
+    right:0;
+	bottom:0;
+}
+
+.lesAlgues{
+	float:right;	
+    position: absolute;
+    left:0;
+	bottom:0;
+}
+
+.description{
+	text-align: center;
+	clear: both;
+}
+
+.information{
+	text-align: center;
+	clear: both;
+}
+.stephantasy{
+	color:#003132;
+	font-size: 150%;
+	font-family: "Times New Roman", Times, serif;
+}
+.copyright{
+	color:#5b320a;
+}
+
+/* Animation des pièces de puzzle */
+.cadrePiece{
+	/*border: 1px black solid;*/
+	/*padding: 2px;*/
+	margin:0px;
+
+}
+.cadrePieceRouge{
+	/*border: 1px red solid;
+	padding: 1px;
+	background: red;*/
+}
+.cadrePieceVert{
+	/*border: 1px green solid;
+	padding: 1px;*/
+	background:#008080;
+}
+
+
+/* FOOTER SETTINGS */
+.footer {
+    clear: both;
+    width: 100%;
+}
+
+.footer_container {
+    margin: 0 auto;
+}
+
+.footer .leftSide {
+    float: left;
+    width: 0%;
+	position: relative;
+}
+
+.footer .centerSide {
+    float: left;
+    width: 100%;
+	position: relative;
+}
+
+
+.footer .rightSide {
+    float: right;
+    width: 0%;
+	position: relative;
+}

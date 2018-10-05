@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!-- Stéphane Barthélemy  -->
+<html>
+<head>	
+	<!-- TITRE -->
+	<title>Gestion des hospitalisations</title>
+	
+	<!-- META -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<!-- Style lié (fichier externe) -->	
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	
+	<!-- Javascript (fichier externe) -->	
+	<script src="javascript/hospitalisations.js"></script>
+	
+	<meta name="description" content="none" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      
+      <!-- TITRE -->
+      <div id="logo">
+        <div id="logo_text">
+          <!-- Titre, accroche et auteur -->
+          <h1><a href="index.html">Gestion des <span class="logo_colour">hospitalisations</span></a></h1>
+          <h2>Simple. Pratique. Efficace.</h2>
+        </div>
+        <div id="contact_details">
+          <p>par</p>
+          <p>Stéphane Barthélemy</p>
+        </div>
+      </div>
+
+      <!-- BARRE DE MENU -->
+      <div id="menubar">
+        <ul id="menu">
+          <li onclick="displayPatients(); setMenuSelected(this);"><a href="#">Patients</a></li>
+          <li onclick="displayEtablissements(); setMenuSelected(this);"><a href="#">Établissements</a></li>
+          <li onclick="displayHospitalisations(); setMenuSelected(this);"><a href="#">Hospitalisations</a></li>
+          <li onclick="displayHospByPatient(); setMenuSelected(this);"><a href="#">Hospitalisations<br/>par patient</a></li>
+          <li onclick="displayHospEtablissement(); setMenuSelected(this);"><a href="#">Hospitalisations<br/>établissement/spécialité</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CONTENU -->
+    <div id="siteContent">
+
+      <div id="defaultPresentation">
+        <h1>BIENVENUE !</h1>
+        <p>Veuillez choisir un onlget pour réaliser une action : </p>
+        <ul>
+          <li><span>Patients</span> : Consultation de la liste des patients</li>
+          <li><span>Établissements</span> : Consultation de la liste des établissements</li>
+          <li><span>Hospitalisations</span> : Consultation de la liste des hospitalisations</li>
+          <li><span>Hospitalisations par patient</span> : Consulter les hospitalisations d'un patient</li>
+          <li><span>Hospitalisations par établissement et par spécialité</span> : Consulter les hospitalisations d'un établissement pour une spécialité donnée</li>
+        </ul>
+      </div>
+
+      <!-- Select Patient -->
+      <div id="choixPatient"  class="invisible">
+          <p class="info">Veuillez coisir le code du patient</p><br/>
+        <select id="selectPatient" class="select" onchange="displayHospByPatientData();"></select>
+      </div>
+
+      <!-- Select Établissement -->
+      <div id="choixEtablissement"  class="invisible">
+        <p class="info">Veuillez choisir l'établissement</p><br/>
+        <select id="selectEtablissement" class="select" onchange="displayHospSpecialite();"></select>
+        <button type="button" class="button" onclick="initContent(true);">Fermer</button> 
+      </div>
+
+      <!-- Select Spécialité -->
+      <div id="choixSpecialite"  class="invisible">
+        <p class="info">Veuillez coisir la spécialité</p><br/>
+        <p class="note">(Note : Seules les spécialités présentes dans nos dossiers pour cet établissement apparaissent dans la liste)</p><br/>
+        <select id="selectSpecialite" class="select" onchange="displayHospEtabSpeData();"></select>
+      </div>
+
+      <!-- Tableau -->
+      <div id="zoneTableau" class="invisible">
+        <img id="imageCroix" src="style/imageCroix.png" alt="imageCroix" height="20" width="20" onclick="initContent(true);" /><br/>
+        <p id="tableauPresentationInfo" class="info"></p>
+        <div id="tableauPresentation"></div>
+        <span id="tableauDataInfo" class="info"></span>
+        <div id="tableauData"></div>
+      </div>
+
+    </div>
+
+    <!-- STATUS -->
+    <div id="status">
+      <h4 id="statusTitle" class="center">Status</h4>
+      <p id="statusInfo">&nbsp;</p>    
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- Source du Template : https://www.html5webtemplates.co.uk/templates/simplestyle_2/index.html -->
+      <a href="http://www.html5webtemplates.co.uk">Copyright &copy; simplestyle_2</a> | 
+      <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | 
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>   
+    </div>
+  </div>
+</body>
+</html>

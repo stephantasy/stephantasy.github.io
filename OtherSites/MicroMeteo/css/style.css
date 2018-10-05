@@ -1,0 +1,256 @@
+/* Stéphane Barthélemy */
+
+/* Mise ne forme générale */
+body {
+	background-color: #99CCFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Classes pour mise en forme spécifique de textes */
+.TextGras{
+	font-weight: bold;
+}
+.TextBleu{
+	color: blue;
+}
+.TextRouge{
+	color: red;
+}
+.TextBlanc{
+	color: white;
+}
+
+/* Mise en forme du texte "MÉTÉO INF1144"*/
+.TitreJaune{
+	position: absolute;
+    top: 8px;
+    left: 8px;
+	color: yellow;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+
+/* Table : Cellule : Alignement du texte en haut */
+#corps td.tabAlignTop{
+	vertical-align: top;
+	font-family: serif;
+	padding-right: 6px;
+}
+
+
+
+/**************/
+/* CONTENEUR */
+/************/
+#conteneur {
+	width: 920px;
+	background-color: #FFFFFF;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/***********/
+/* ENTÊTE */
+/*********/
+#entete {	
+	position: relative;
+}
+
+#entete img{
+	float: left;
+	height: auto;
+	width: 100%;	
+}
+
+
+/***************/
+/* NAVIGATION */
+/*************/
+#navigation{
+	/*border:yellow 1px solid;*/
+	font-weight: bold;	
+}
+
+/* Tableau de la barre de navigation */
+#navigation > table{
+	width: 100%;
+	background-color: yellow;
+	table-layout: fixed;
+	text-align: center;
+}
+
+/* === Liens de navigation === */
+/* unvisited link */
+#navigation a:link{
+	color:#000080;
+	text-decoration: underline;
+}
+/* visited link */
+#navigation a:visited{
+	color:#0920B0;
+	text-decoration: underline;
+}
+/* mouse over link */
+#navigation a:hover{
+	color:green;	
+	text-decoration: underline;
+}
+/* selected link */
+#navigation a:active{
+	color:red;	
+	text-decoration: underline;	
+}
+
+
+/**********/
+/* CORPS */
+/********/
+
+#corps > p{
+	margin: 2%;		/* Bordure gauche des textes */
+}
+
+/****************************/
+/* Spécifique à la page TP" */
+/****************************/
+#corps > ul{
+	list-style-type: none;
+	background-color: #eee9e9;	
+	margin-left: 5%;
+	width: 200px;	
+	font-weight: bold;
+}
+
+/* === Liens de navigation "Source" === */
+/* unvisited link */
+#corps a:link{
+	color: purple;
+	text-decoration: underline;
+}
+/* visited link */
+#corps a:visited{
+	color: purple;
+	text-decoration: underline;
+}
+/* mouse over link */
+#corps a:hover{
+	color: green;	
+	background: white;
+	text-decoration: none;
+}
+/* selected link */
+#corps a:active{
+	color: #8b4513;
+	background: white;
+	text-decoration: underline;	
+}
+
+/* === Liens de navigation de la liste de villes === */
+/* unvisited link */
+#corps li a:link{
+	color: #8b4513;
+	text-decoration: none;
+}
+/* visited link */
+#corps li a:visited{
+	color: #8b4513;
+	text-decoration: none;
+}
+/* mouse over link */
+#corps li a:hover{
+	color: #8b4513;	
+	background: white;
+	text-decoration: none;
+}
+/* selected link */
+#corps li a:active{
+	color: red;
+	background: white;
+	text-decoration: none;	
+}
+
+
+
+/***********************************/
+/* Spécifique à la page PREVISIONS */
+/***********************************/
+#corps > table{
+	font-family: serif;
+	width: 90%;
+	border-collapse: collapse;
+	text-align: center;
+	margin:auto auto 20px auto;		
+}
+
+/* Cadre du tableau */
+#corps > table tr td {
+	border:black 1px solid;
+}
+
+/* Fond bleu de la 1ére ligne */
+#corps > table tr:nth-child(1) > td {
+    background: #33cccc;
+}
+
+/* Taille des image de la 2éme ligne */
+#corps > table tr:nth-child(2) * img {
+    height: auto;
+	width: 40%;
+}
+
+
+/*************************************/
+/* Spécifique à la page COMMENTAIRES */
+/*************************************/
+
+.form_style{
+	margin: 0 0 2% 2%;
+}
+
+
+/*****************/
+/* PIED DE PAGE */
+/***************/
+#piedpage{
+	background-color: #87cefa;
+	padding-top: 2px;
+}
+
+/* Tableau du pied de page */
+#piedpage > table{
+	width: 100%;
+	height: 100%;	
+	table-layout: fixed;
+	text-align: center;
+	color: #000080;	
+	border-collapse: collapse;
+}
+
+#piedpage > table tr {
+	height: 30px;
+}
+
+
+/* Traitement de la colonne de gauche */
+#piedpage > table td:nth-child(1) {
+	vertical-align: top;
+}
+
+/* Traitement de la colonne du mileu */
+#piedpage > table td:nth-child(2) {
+	width: 60%;
+	font-weight: bold;
+}
+
+/* Traitement de la colonne de droite */
+#piedpage > table td:nth-child(3) {
+	vertical-align: top;
+}
+
+/* Mise en forme des éléments de validation HTML5 et CSS3 */
+#piedpage img{
+	width: 80%;
+	height: auto;
+}

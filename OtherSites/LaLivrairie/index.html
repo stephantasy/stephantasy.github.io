@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<!-- Stéphane Barthélemy  -->
+<html lang="fr">
+<head>	
+	<!-- TITRE -->
+	<title>La Livrairie !</title>
+	
+	<!-- META -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="none" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Feuilles de style -->	
+  <link rel="stylesheet" href="style/bootstrap.min.css"> <!-- Pour le carousel -->
+  <link rel="stylesheet" href="style/w3.css">
+  <link rel="stylesheet" href="style/w3-theme-light-blue.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- Icones -->
+  <link rel="stylesheet" href="style/style.css">
+
+
+	<!-- JQuery -->
+  <script src="javascript/jquery-3.3.1.min.js"></script>
+  <script src="javascript/jquery.validate.min.js"></script> <!-- Validation du formulaire -->
+
+	<!-- Javascript -->	
+  <script src="javascript/bootstrap.min.js"></script> <!-- Pour le carousel -->
+  <script src="javascript/popper.min.js"></script> <!-- Pour le carousel -->
+	<script src="javascript/classLivre.js"></script>
+	<script src="javascript/lalivrairie.js"></script>	
+</head>
+
+<body id="hautPage" onload="pageInitializer(); displayTime();" class="w3-theme-l4">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-theme-l1" style="z-index:3;width:270px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-text-theme" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="images/logo.jpg" alt="compagny_logo" style="width:100%;" class="w3-round"><br><br>
+      <h4><b>La Livrairie !</b></h4>
+      <p class="w3-text-grey"><b>Avec vous depuis 2018</b></p>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#hautPage" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-theme w3-hover-text-theme"><i class="fa fa-shopping-bag fa-fw w3-margin-right"></i>BOUTIQUE</a> 
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-theme w3-hover-text-theme"><i class="fa fa-user fa-fw w3-margin-right"></i>À PROPOS</a> 
+      <span onclick="document.getElementById('contactModal').style.display='block'" class="w3-bar-item w3-button w3-padding w3-hover-theme w3-hover-text-theme"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</span>
+    </div>
+    <br>
+    <div class="w3-container">
+      <p class="w3-text-grey"><b>Suivez-nous !</b></p>
+      <div class="w3-panel w3-large">
+        <i class="fa fa-facebook-official w3-hover-text-theme"></i>
+        <i class="fa fa-instagram w3-hover-text-theme"></i>
+        <i class="fa fa-snapchat w3-hover-text-theme"></i>
+        <i class="fa fa-pinterest-p w3-hover-text-theme"></i>
+        <i class="fa fa-twitter w3-hover-text-theme"></i>
+        <i class="fa fa-linkedin w3-hover-text-theme"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- PAGE CONTENT -->
+  <div class="w3-main" style="margin-left:270px">
+
+    <!-- Header (bouton menu qui apparait si l'affichage n'est pas très large)-->
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-theme" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+
+    <!-- NavBar  -->
+    <div class="w3-bar w3-theme-dark">
+
+      <!-- HEURE -->
+      <div class="w3-bar-item w3-margin" style="height:100%;"><i class="fa fa-clock-o w3-margin-right"></i><span id="displayTime"></span></div>
+
+      <!-- BOUTON NOUVEAUTÉ -->
+      <button onclick="afficheContenuPageLivres()" class="w3-bar-item w3-button w3-hover-theme w3-margin w3-text-theme"><i class="fa fa-diamond w3-margin-right"></i>Nouveauté !</button>
+
+      <!-- BOUTON AFFICHER TOUS LES ARTICLES -->
+      <button id="AllLivres" onclick="afficheContenuPageLivres(this)" class="w3-bar-item w3-hover-theme w3-button w3-margin w3-text-theme"><i class="fa fa-list w3-margin-right"></i>Afficher tous les articles</button>
+
+      <!-- BOUTON CATEGORIES -->
+      <div class="w3-dropdown-hover w3-hide-small w3-margin">
+        <button id="boutonCategorie" class=" w3-button w3-hover-theme w3-text-theme">Catégories <i class="fa fa-chevron-circle-down w3-large"></i></button>     
+        <div id="choixCategorie" class="w3-dropdown-content w3-bar-block w3-card-4">
+          <div id="Roman" class="w3-bar-item w3-button w3-hover-theme" onclick="afficheContenuPageLivres(this)">Roman</div>
+          <div id="Sciences" class="w3-bar-item w3-button w3-hover-theme" onclick="afficheContenuPageLivres(this)">Sciences</div>
+          <div id="Histoire" class="w3-bar-item w3-button w3-hover-theme" onclick="afficheContenuPageLivres(this)">Histoire</div>
+          <div id="BDManga" class="w3-bar-item w3-button w3-hover-theme" onclick="afficheContenuPageLivres(this)">BD &amp; Mangas</div>
+          <div id="ScienceFiction" class="w3-bar-item w3-button w3-hover-theme" onclick="afficheContenuPageLivres(this)">Science-fiction</div>
+        </div>
+      </div>
+
+      <!-- BOUTON PANIER -->
+      <button class="w3-button w3-right w3-hover-theme" onclick="displayPanier()" style="padding-top:12px; padding-bottom:6px;">
+        <span class="w3-bar">
+          <span class="w3-display-container w3-bar-item">
+            <i class="fa fa-shopping-cart w3-xxlarge"></i>      
+            <span id="panierBadge" class="w3-badge w3-small w3-amber w3-display-topright"></span>
+          </span>
+          <span class="w3-bar-item">Mon Panier</span>
+        </span>
+      </button>
+      <!--<button onclick="AlertPanier()" class="w3-button w3-red">Tableau Panier</button>-->
+      
+    </div><!-- NavBar  -->
+
+
+    <!-- PANIER MODAL -->
+    <div id="panier" class="w3-container"></div>
+
+
+    <!-- FACTURE MODAL -->    
+    <div id="facture" class="w3-container">
+        <div id="factureModal" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-top">
+
+            <!-- Header -->
+            <header class="w3-container w3-teal"> 
+              <span onclick="document.getElementById('factureModal').style.display='none'" class="w3-button w3-display-topright w3-red w3-round header-close">&times;</span>
+              <h2>Votre Facture</h2>
+            </header>
+
+            <div id="factureInside" class="w3-container w3-margin w3-card-4">
+              <!-- Partie Titre -->
+              <div id="factureZoneTitre" class="w3-container w3-margin">
+                <h2 class="w3-center">La Livrairie vous remercie !</h2><br>
+                <!-- Si on a les coordonées, on les affiches -->
+                <div id="factureCoord" style="display: none;">
+                  <h4 style="text-decoration: underline;">Émise à : </h4>
+                  <div class="w3-container w3-margin">
+                    <span id="factureNom"></span><br>
+                    <span id="facturePrenom"></span><br>
+                    <span id="factureAdresse"></span>
+                </div>
+                </div>                
+                <h4 style="text-decoration: underline;">Détail de la facture : </h4>
+              </div>
+
+              <!-- Partie detail -->
+              <ul id="factureDetail" class="w3-container w3-margin"></ul>
+
+              <!-- Partie somme -->
+              <div id="factureSomme"></div>
+            </div>
+
+            <!-- Bouton imprimer -->            
+            <footer class="w3-center  w3-teal">
+              <button class="w3-button w3-round-large w3-margin w3-white w3-ripple" onclick="imprimerFacture();">Imprimer</button>
+            </footer>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- CAROUSEL -->
+    <div id="carousel" class="carousel slide w3-center" data-ride="carousel" style="width:100%;">
+      <!-- Indicators -->
+      <ul class="carousel-indicators" style="z-index: 1;" > <!-- le z-index est pour eviter qu'il apparaisse au-dessus des fenêtres modales -->
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+        <li data-target="#carousel" data-slide-to="4"></li>
+      </ul>      
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/CarouselImg1.jpg" alt="CarouselImg1" >
+        </div>
+        <div class="carousel-item">
+          <img src="images/CarouselImg2.jpg" alt="CarouselImg2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/CarouselImg3.jpg" alt="CarouselImg3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/CarouselImg4.jpg" alt="CarouselImg4">
+        </div>
+        <div class="carousel-item">
+          <img src="images/CarouselImg5.jpg" alt="CarouselImg5">
+        </div>
+      </div>      
+    </div>
+
+
+    <!-- LIVRES AFFICHÉS -->
+    <div  class="w3-container w3-theme-d3 w3-text-theme">
+      <h2 id="currentDisplay">Categorie</h2>
+    </div> 
+
+
+    <!-- CARD DES LIVRES -->
+    <div id="livresCard" class="w3-container"></div>
+
+
+    <!-- MODAL LIVRE DETAIL -->
+    <div id="livreModal" class="w3-modal" onclick="this.style.display='none'">
+      <div id="livreDetail" class="w3-modal-content w3-card-4 w3-animate-zoom">
+        <div class="w3-bar w3-padding w3-theme-l4 w3-topbar w3-bottombar w3-border-teal">
+          <div class="w3-bar-item">
+            <img id="livreDetailImage" src="images/no_book.jpg" alt="image_livre" style="height:400px;">
+          </div>
+          <div class="w3-bar-item" style="width:60%">
+            <h3 id="livreDetailTitre">Titre Livre</h3>
+            <p id="livreDetailAuteur" class="w3-opacity"></p>
+            <p id="livreDetailDesc"></p>
+            <h6><i>Catégorie : <span id="livreDetailCategorie"></span></i></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- SNACKBAR -->
+    <div id="snackbar"></div>
+
+
+    <!-- ABOUT -->
+    <div id="about" class="w3-theme-l1" style="padding-bottom:16px;">
+      <div class="w3-theme-d4 w3-container">
+        <h3><b>À propos de nous !</b></h3>
+      </div>
+      <hr>     
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+          Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+          Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+          Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+      </p>
+      <hr>
+      <div class="w3-theme-d4 w3-container">
+        <h3><b>Travail pratique numéro 3</b></h3>
+      </div>
+      <div id="info_perso">        
+          <hr>
+          <h4 class="w3-opacity w3-padding">Réalisé par <b>Stéphane Barthélemy</b></h4>
+          <hr class="w3-theme-d5">
+      </div>    
+    </div>
+
+
+    <!-- FORMULAIRE CONTACT -->
+    <div id="contactModal" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-top light-teal-bgd">
+        
+        <!-- Entête et bouton de fermeture -->
+        <header class="w3-container w3-teal"> 
+          <span onclick="document.getElementById('contactModal').style.display='none'" class="w3-button w3-display-topright w3-red w3-round header-close">X</span>
+          <h2>Veuillez saisir vos coordonnées</h2>
+        </header>
+        
+        <div class="w3-container">
+          <form action="#" method="post" onSubmit="return false" id="contactModalForm" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+            <!-- Nom -->
+            <div class="w3-row w3-section">
+              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                <div class="w3-rest">
+                  <input class="w3-input w3-border" name="contactFormNom" id="contactFormNom" type="text" placeholder="Nom">
+                </div>
+            </div>
+            <!-- Prénom -->
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                  <div class="w3-rest">
+                    <input class="w3-input w3-border" name="contactFormPrenom" id="contactFormPrenom" type="text" placeholder="Prénom">
+                  </div>
+              </div>
+            <!-- Adresse -->
+            <div class="w3-row w3-section">
+              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+                <div class="w3-rest">
+                  <input class="w3-input w3-border" name="contactFormAddress" id="contactFormAddress" type="text" placeholder="Adresse">
+                </div>
+            </div>
+            <!-- Téléphone -->
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+                  <div class="w3-rest">
+                    <input class="w3-input w3-border" name="contactFormPhone" id="contactFormPhone" type="text" placeholder="Téléphone">
+                  </div>
+              </div>
+              <!-- Courriel -->
+              <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+                  <div class="w3-rest">
+                    <input class="w3-input w3-border" name="contactFormEmail" id="contactFormEmail" type="text" placeholder="Courriel">
+                  </div>
+              </div>
+              <!-- Bouton envoyer -->
+              <p class="w3-center">
+                <button id="submitButtonContactForm" class="w3-button w3-round-large w3-section w3-blue w3-ripple">Envoyer</button>
+              </p>
+          </form>
+        </div>
+        <!-- Message -->
+        <footer class="w3-container w3-teal w3-center">
+          <p class="w3-margin">Veuillez remplir tous les champs</p>
+        </footer>
+      </div>
+    </div>
+
+    
+    <!-- FOOTER -->
+    <div id="footer" class="w3-container w3-theme-dark w3-center w3-padding">
+      <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | 
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+
+      <!-- Bouton Pour remonter -->
+      <div style="position:relative;bottom:10px;z-index:1;" class="w3-right">   
+        <a class="w3-button w3-hover-theme" href="#hautPage">
+          <span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span>
+        </a>
+      </div>
+    </div>
+
+  </div><!-- !PAGE CONTENT! -->
+
+</body>
+</html>

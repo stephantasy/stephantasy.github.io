@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>		
+<livres>		
+	<livre id="0">	
+		<titre>La Disparition de Stephanie Mailer</titre>
+		<auteur>Joël Dicker</auteur>
+		<desc>En 1994, dans une petite station balnéaire des Hamptons, le maire, sa femme et un témoin sont assassinés.</desc>
+		<prix>32,95</prix>
+		<image>2435107-gf.jpg</image>
+		<categorie>Roman</categorie>
+		<nouveaute>1</nouveaute>
+	</livre>	
+	<livre id="1">	
+		<titre>Celle qui fuit et celle qui reste</titre>
+		<auteur>Elena Ferrante</auteur>
+		<desc>A la fin des années 1960, alors que les évènements de 1968 s'annoncent et que les mouvements féministes et protestataires s'organisent.</desc>
+		<prix>15,95</prix>
+		<image>2387066-gf.jpg</image>
+		<categorie>Roman</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="2">	
+		<titre>L'Enfant perdue</titre>
+		<auteur>Elena Ferrante</auteur>
+		<desc>Elena délaisse l'éducation de ses filles et sa carrière d'écrivain au profit de sa relation passionnelle avec Nino.</desc>
+		<prix>39,95</prix>
+		<image>2387062-gf.jpg</image>
+		<categorie>Roman</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="3">	
+		<titre>Couleurs de l'incendie</titre>
+		<auteur>Pierre Lemaitre</auteur>
+		<desc>Second volet de la trilogie ouverte avec Au revoir là-haut.</desc>
+		<prix>34,95</prix>
+		<image>2372356-gf.jpg</image>
+		<categorie>Roman</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="4">	
+		<titre>Et moi, je vis toujours</titre>
+		<auteur>Jean D' Ormesson</auteur>
+		<desc>Le narrateur évolue entre les époques, relatant les grandes avancées culturelles de l'humanité.</desc>
+		<prix>29,95</prix>
+		<image>2415723-gf.jpg</image>
+		<categorie>Roman</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="5">	
+		<titre>99 trucs pour s'enrichir</titre>
+		<auteur>Collectif</auteur>
+		<desc>Forts du succès de la première édition, les chroniqueurs experts de la chronique « Dans vos poches » du Journal de Montréal récidivent.</desc>
+		<prix>19,95</prix>
+		<image>2372509-gf.jpg</image>
+		<categorie>Sciences</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="6">	
+		<titre>Le Guide de la rénovation heureuse</titre>
+		<auteur>Jean-Benoît Nadeau</auteur>
+		<desc>Après plusieurs projets personnels de rénovation, le journaliste Jean-Benoît Nadeau a réalisé un premier reportage sur ce sujet.</desc>
+		<prix>22,95</prix>
+		<image>2385277-gf.jpg</image>
+		<categorie>Sciences</categorie>
+		<nouveaute>1</nouveaute>
+	</livre>	
+	<livre id="7">	
+		<titre>Les Quatre saisons de votre potager</titre>
+		<auteur>Mélanie Grégoire</auteur>
+		<desc>Oui, la culture de vos propres légumes peut être facile et fructueuse !</desc>
+		<prix>29,95</prix>
+		<image>2420464-gf.jpg</image>
+		<categorie>Sciences</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="8">	
+		<titre>107 principes pour investir dans l'immobilier au québec</titre>
+		<auteur>Guy Baillargeon</auteur>
+		<desc>Des conseils pour investir dans l'immobilier au Canada en s'adaptant aux particularités juridiques de ce marché.</desc>
+		<prix>29,95</prix>
+		<image>2425434-gf.jpg</image>
+		<categorie>Sciences</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="9">	
+		<titre>Quand obsession rime avec passion</titre>
+		<auteur>Grant Cardone</auteur>
+		<desc>L'obsession m'a sauvé la vie et a fait de moi une superstar dans le monde des affaires. que peut-elle faire pour vous ?</desc>
+		<prix>24,95</prix>
+		<image>2386203-gf.jpg</image>
+		<categorie>Sciences</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="10">	
+		<titre>Holocauste : une nouvelle histoire</titre>
+		<auteur>Laurence Rees</auteur>
+		<desc>Un nouvel éclairage sur la Shoah fondé sur de nombreux témoignages inédits, de documents d'époque et de travaux d'historiens.</desc>
+		<prix>36,95</prix>
+		<image>2373231-gf.jpg</image>
+		<categorie>Histoire</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="11">	
+		<titre>Rosemary, l'enfant que l'on cachait</titre>
+		<auteur>Kate Clifford Larson</auteur>
+		<desc>Biographie de Rosemary, soeur de John Fitzgerald Kennedy.</desc>
+		<prix>13,95</prix>
+		<image>2428907-gf.jpg</image>
+		<categorie>Histoire</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="12">	
+		<titre>Villes et villages du québec : 365 questions et réponses</titre>
+		<auteur>Henri Dorion</auteur>
+		<desc>Ce livre, le premier d'une série intitulée « Le monde en questions », se veut une présentation de 365 villes et villages du Québec au moyen d'autant de questions.</desc>
+		<prix>24,95</prix>
+		<image>2443637-gf.jpg</image>
+		<categorie>Histoire</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="13">	
+		<titre>Au café existentialiste : la liberté, l'être et le cocktail à l'abricot</titre>
+		<auteur>Sarah Bakewell</auteur>
+		<desc>Paris, 1933. Trois amis sirotent un cocktail à l'abricot : Jean-Paul Sartre, Simone de Beauvoir et Raymond Aron, tout juste rentré de Berlin où il a découvert la phénoménologie.</desc>
+		<prix>36,95</prix>
+		<image>2372375-gf.jpg</image>
+		<categorie>Histoire</categorie>
+		<nouveaute>1</nouveaute>
+	</livre>	
+	<livre id="14">	
+		<titre>Marqués du triangle rose</titre>
+		<auteur>Ken Setterington</auteur>
+		<desc>Avant les années 1930, l'Allemagne, en particulier sa capitale Berlin, était l'un des endroits les plus tolérants envers les homosexuels.</desc>
+		<prix>17,95</prix>
+		<image>2432344-gf.jpg</image>
+		<categorie>Histoire</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="15">	
+		<titre>Le Sommeil de la Force #05</titre>
+		<auteur>Jarrett J Krosoczka</auteur>
+		<desc>Victor est de retour à l'académie et sa deuxième année ne débute pas comme il l'imaginait.</desc>
+		<prix>11,99</prix>
+		<image>2293868-gf.jpg</image>
+		<categorie>BDManga</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="16">	
+		<titre>Le Mystère des pastèques perdues #01</titre>
+		<auteur>Jean-Christophe Derrien</auteur>
+		<desc>Frigiel, son chien Fluffy et leurs amis Alice et Abel enquêtent sur la disparition de la livraison de pastèques destinées au magasin de Koreme.</desc>
+		<prix>17,95</prix>
+		<image>2396243-gf.jpg</image>
+		<categorie>BDManga</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="17">	
+		<titre>Dragon ball super #03</titre>
+		<auteur>Akira Toriyama, Toyotaro</auteur>
+		<desc>Trunks est revenu une nouvelle fois du futur ! Dans son monde, un homme ressemblant à Goku trait pour trait, surnommé Goku Black, cherche à éradiquer la race humaine.</desc>
+		<prix>12,95</prix>
+		<image>2431293-gf.jpg</image>
+		<categorie>BDManga</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="18">	
+		<titre>Narval, licorne de mer #01</titre>
+		<auteur>Ben Clanton</auteur>
+		<desc>Narval est une licorne de mer insouciante. Gelato est une méduse raisonnable.</desc>
+		<prix>10,99</prix>
+		<image>2429939-gf.jpg</image>
+		<categorie>BDManga</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="19">	
+		<titre>Fairy tail #01</titre>
+		<auteur>Hiro Mashima</auteur>
+		<desc>Lucy, jeune magicienne, rêve de rejoindre la fameuse guilde de magiciens, la Fairy Tail.</desc>
+		<prix>5,95</prix>
+		<image>973074-gf.jpg</image>
+		<categorie>BDManga</categorie>
+		<nouveaute>1</nouveaute>
+	</livre>	
+	<livre id="20">	
+		<titre>Sleeping beauties</titre>
+		<auteur>Owen King, Stephen King</auteur>
+		<desc>Dans la prison pour femmes d'une petite ville des Appalaches, les femmes sont frappées d'un état léthargique et sont enveloppées dans un cocon.</desc>
+		<prix>39,95</prix>
+		<image>2424906-gf.jpg</image>
+		<categorie>ScienceFiction</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="21">	
+		<titre>Artémis éd. canada</titre>
+		<auteur>Andy Weir</auteur>
+		<desc>Le nouveau thriller d'Andy Weir, auteur du best-seller international Seul sur Mars (The Martian)</desc>
+		<prix>34,95</prix>
+		<image>2415587-gf.jpg</image>
+		<categorie>ScienceFiction</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="22">	
+		<titre>Justiciers #09</titre>
+		<auteur>Anne Robillard</auteur>
+		<desc>Dans l'univers, il existe une multitude de mondes parallèles et entre eux s'ouvrent parfois des portails qui nous permettent d'y accéder.</desc>
+		<prix>24,95</prix>
+		<image>2416842-gf.jpg</image>
+		<categorie>ScienceFiction</categorie>
+		<nouveaute>1</nouveaute>
+	</livre>	
+	<livre id="23">	
+		<titre>Aliss</titre>
+		<auteur>Patrick Senécal</auteur>
+		<desc>Il était une fois...... Alice, une jeune fille curieuse, délurée, fonceuse et intelligente de Brossard.</desc>
+		<prix>27,95</prix>
+		<image>2419824-gf.jpg</image>
+		<categorie>ScienceFiction</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+	<livre id="24">	
+		<titre>Ready player one n. éd.</titre>
+		<auteur>Ernest Cline</auteur>
+		<desc>La réalité étant devenue insoutenable en 2045, la plupart de l'humanité passe son temps connectée à l'OASIS, un vaste monde virtuel.</desc>
+		<prix>27,95</prix>
+		<image>2393752-gf.jpg</image>
+		<categorie>ScienceFiction</categorie>
+		<nouveaute>0</nouveaute>
+	</livre>	
+</livres>		

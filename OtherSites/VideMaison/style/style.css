@@ -1,0 +1,130 @@
+/* Stéphane Barthélemy */
+
+html{ 
+  height: 100%;
+}
+
+*{ margin: 0px;
+  padding: 0px;
+}
+
+body{
+  color: #777;
+}
+
+
+/* Pour afficher le carousel sur toute la largeur */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* CARD */
+.zoom {
+  transition: transform .2s;
+}
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+.card {
+  margin: 20px;
+  display: inline-block;
+}
+
+/* CONTACT */
+.my-error-class {
+  color:#FF0000;
+}
+.my-valid-class {
+  color:#000000;
+}
+
+/* DIVERS */
+
+
+
+/* Bouton de fermeture */
+.header-close{
+  margin:8px 8px 0px 0px;
+}
+
+/* Fond bleu clair */
+.light-teal-bgd{
+  color:black; 
+  background:rgb(230, 250, 250);
+}
+
+/*Ligne de séparation */
+.line-separator{
+  border-bottom: 1px solid teal;
+}
+
+/* Fond blanc */
+.white-bgd{
+  background:rgb(255, 255, 255);
+}
+
+/* Décalage du signe Dollar */
+.dollar-sign{
+  margin-left:-25px;
+}
+
+/* Footer */
+#footer a, #footer span{
+  font-weight: bold;
+  color:gold;
+}
+
+/* image-vendu */
+.image-vendu{
+  position: absolute;  
+  margin-left: -249px;
+  width:260px;
+}
+
+
+/* SNACKBAR */
+#snackbar {
+  visibility: hidden;
+  min-width: 300px;
+  margin-left: 00px;
+  background-color: goldenrod;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 50px;
+  font-size: 20px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 50px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 50px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 50px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 50px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+/* SNACKBAR */

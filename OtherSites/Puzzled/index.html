@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<!-- Setting the viewport to make your website look good on all devices -->
+		<meta name="Viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Define keywords for search engines -->
+		<meta name="Keywords" content="HTML, CSS, XML, XHTML, JavaScript, Puzzle, Casse-tête">
+		<!-- Description de la page -->
+		<meta name="Description" content="Jeu">
+		<!-- Auteur de la page -->
+		<meta name="Author" content="Stephantasy">
+		
+		<title>Puzzled</title>
+		
+		<link rel="stylesheet" href="styles/style_reset.css">
+		<link rel="stylesheet" href="styles/style.css">				
+		<script src="scripts/script.js"></script>				
+	</head>
+	<body>
+	
+		
+		<header>
+			<div class="title">
+				<img id="Puzzle Online" src="images/img/Title.png" alt="Title"></img>
+			</div>
+		</header>
+		
+		<nav>
+		<!--
+			<div class="navigation">
+				<a id="home" class="home" href="#">Accueil</a>
+				<a id="about" class="about" href="#">À propos</a>
+			</div>
+		-->
+		</nav>
+		
+		<section>
+			<div class="welcome">
+				<h1>Bienvenue !</h1>
+				<h2>Placez les pièces de façon à compléter le puzzle. Pour cela, cliquez sur une pièce et déplacez là vers l'emplacement voulu.</h2>
+			</div>
+		</section>
+		
+		<section class="cadrePuzzleHaut">
+			<img id="01" src="images/1/01.png" alt="piece_01" class="cadrePiece" draggable="true"
+				onmouseenter="onOverPiece(event, 'mouse')" onmouseleave="onOverPiece(event, '')"
+				ondragstart="dragPieceStart(event)" />
+			<img id="02" src="images/1/02.png" alt="piece_02" class="cadrePiece" draggable="true"
+				onmouseenter="onOverPiece(event, 'mouse')" onmouseleave="onOverPiece(event, '')"
+				ondragstart="dragPieceStart(event)" />
+			<img id="03" src="images/1/03.png" alt="piece_03" class="cadrePiece" draggable="true"
+				onmouseenter="onOverPiece(event, 'mouse')" onmouseleave="onOverPiece(event, '')"
+				ondragstart="dragPieceStart(event)" />
+			<img id="04" src="images/1/04.png" alt="piece_04" class="cadrePiece" draggable="true"
+				onmouseenter="onOverPiece(event, 'mouse')" onmouseleave="onOverPiece(event, '')"
+				ondragstart="dragPieceStart(event)" />
+			<img id="05" src="images/1/05.png" alt="piece_05" class="cadrePiece" draggable="true"
+				onmouseenter="onOverPiece(event, 'mouse')" onmouseleave="onOverPiece(event, '')"
+				ondragstart="dragPieceStart(event)" />
+			<img id="06" src="images/1/06.png" alt="piece_06" class="cadrePiece" draggable="true"
+				onmouseenter="onOverPiece(event, 'mouse')" onmouseleave="onOverPiece(event, '')"
+				ondragstart="dragPieceStart(event)" />
+			<img id="07" src="images/1/07.png" alt="piece_07" class="cadrePiece" draggable="true"
+				onmouseenter="onOverPiece(event, 'mouse')" onmouseleave="onOverPiece(event, '')"
+				ondragstart="dragPieceStart(event)" />
+			<img id="08" src="images/1/08.png" alt="piece_08" class="cadrePiece" draggable="true"
+				onmouseenter="onOverPiece(event, 'mouse')" onmouseleave="onOverPiece(event, '')"
+				ondragstart="dragPieceStart(event)" />
+			<img id="09" src="images/1/09.png" alt="piece_09" class="cadrePiece" draggable="true"
+				onmouseenter="onOverPiece(event, 'mouse')" onmouseleave="onOverPiece(event, '')"
+				ondragstart="dragPieceStart(event)" />
+		</section>
+		
+		<section class="Underwater">
+			
+			<div>
+				<img id="Rayons" src="images/img/Rayons.png" alt="Rayons" class="lesRayons"></img>
+			</div>
+			<div class="cadrePuzzleBas" >
+				<table class="tablePuzzleBas">
+					<tr>
+						<td id="09">
+							<img id="Piece_09_Vide" src="images/0/Piece_09_Vide.png" alt="Piece_09_Vide" class="cadrePiece"							
+								ondragenter="onOverPiece(event, 'drag')" ondragleave="onOverPiece(event, '')"
+								ondragover="allowDrop(event)" ondrop="dragPieceInto(event)" />
+						</td>
+						<td id="08">
+							<img id="Piece_08_Vide" src="images/0/Piece_08_Vide.png" alt="Piece_08_Vide" class="cadrePiece"							
+								ondragenter="onOverPiece(event, 'drag')" ondragleave="onOverPiece(event, '')"
+								ondragover="allowDrop(event)" ondrop="dragPieceInto(event)" />
+						</td>
+						<td id="01">
+							<img id="Piece_01_Vide" src="images/0/Piece_01_Vide.png" alt="Piece_01_Vide" class="cadrePiece" draggable="false"							
+								ondragenter="onOverPiece(event, 'drag')" ondragleave="onOverPiece(event, '')"
+								ondragover="allowDrop(event)" ondrop="dragPieceInto(event)" />							
+						</td>
+					</tr>
+					<tr>
+						<td id="03">
+							<img id="Piece_03_Vide" src="images/0/Piece_03_Vide.png" alt="Piece_03_Vide" class="cadrePiece"							
+								ondragenter="onOverPiece(event, 'drag')" ondragleave="onOverPiece(event, '')"
+								ondragover="allowDrop(event)" ondrop="dragPieceInto(event)" />
+						</td>
+						<td id="06">
+							<img id="Piece_06_Vide" src="images/0/Piece_06_Vide.png" alt="Piece_06_Vide" class="cadrePiece"							
+								ondragenter="onOverPiece(event, 'drag')" ondragleave="onOverPiece(event, '')"
+								ondragover="allowDrop(event)" ondrop="dragPieceInto(event)" />
+						</td>
+						<td id="02">
+							<img id="Piece_02_Vide" src="images/0/Piece_02_Vide.png" alt="Piece_02_Vide" class="cadrePiece"							
+								ondragenter="onOverPiece(event, 'drag')" ondragleave="onOverPiece(event, '')"
+								ondragover="allowDrop(event)" ondrop="dragPieceInto(event)" />
+						</td>
+					</tr>
+					<tr>
+						<td id="05">
+							<img id="Piece_05_Vide" src="images/0/Piece_05_Vide.png" alt="Piece_05_Vide" class="cadrePiece"							
+								ondragenter="onOverPiece(event, 'drag')" ondragleave="onOverPiece(event, '')"
+								ondragover="allowDrop(event)" ondrop="dragPieceInto(event)" />
+						</td>
+						<td id="04">
+							<img id="Piece_04_Vide" src="images/0/Piece_04_Vide.png" alt="Piece_04_Vide" class="cadrePiece"							
+								ondragenter="onOverPiece(event, 'drag')" ondragleave="onOverPiece(event, '')"
+								ondragover="allowDrop(event)" ondrop="dragPieceInto(event)" />
+						</td>
+						<td id="07">
+							<img id="Piece_07_Vide" src="images/0/Piece_07_Vide.png" alt="Piece_07_Vide" class="cadrePiece"							
+								ondragenter="onOverPiece(event, 'drag')" ondragleave="onOverPiece(event, '')"
+								ondragover="allowDrop(event)" ondrop="dragPieceInto(event)" />
+						</td>
+					</tr>
+				</table>				
+			</div>	
+			
+			<div class="resetButtonCase" >
+				<a id="reset" class="resetButton" href="">
+					<img src="images/img/Reset.png" alt="Title" />
+				</a>
+			</div>
+		</section>	
+		
+		<div class="footer">
+			<div class="footer_container">
+				<div class="leftSide">
+					<img id="Puzzle Online" src="images/img/Algues.png" alt="Title" class="lesAlgues"></img>
+				</div>
+
+				<div class="centerSide">					
+					<span class="information">
+						<p class="stephantasy">- Stephantasy Studio -</p>
+					</span>										
+					<span class="information">
+						<p class="copyright">Copyright © 2016-2017 - Tous droits reservés</p>
+					<span class="information">
+						<!--p><a id="contact" href="#">Contact</a></p-->
+					</span>
+				</div>
+
+				<div class="rightSide">
+					<img id="Puzzle Online" src="images/img/Coffre.png" alt="Title" class="leCoffre"></img>
+				</div>
+			</div>			
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!-- Stéphane Barthélemy -->
+
+<html lang="fr">
+<head>	
+	<!-- TITRE -->
+	<title>Vente articles</title>
+	
+	<!-- META -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Vente articles" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Feuilles de style -->	
+	<link rel="stylesheet" href="style/bootstrap.min.css"> <!-- Pour le carousel -->
+	<link rel="stylesheet" href="style/w3.css">
+	<link rel="stylesheet" href="style/w3-theme-light-blue.css">  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- Icones -->
+	<link rel="stylesheet" href="style/style.css">
+
+	<!-- JQuery -->
+	<script src="javascript/jquery-3.3.1.min.js"></script>
+	<script src="javascript/jquery.validate.min.js"></script> <!-- Validation du formulaire -->
+
+	<!-- Javascript -->	
+	<script src="javascript/bootstrap.min.js"></script> <!-- Pour le carousel -->
+	<script src="javascript/popper.min.js"></script> <!-- Pour le carousel -->
+	<script src="javascript/classArticle.js"></script>
+	<script src="javascript/lalivrairie.js?v=1.2"></script>	
+</head>
+
+<body id="hautPage" onload="pageInitializer();" class="w3-theme-l4">
+
+  <!-- Sidebar/menu -->
+  <!--<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-theme-l1" style="z-index:3;width:270px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-text-theme" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="images/logo.jpg" alt="compagny_logo" style="width:100%;" class="w3-round"><br><br>      
+      <div class="w3-bar-block">
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-theme w3-hover-text-theme"><i class="fa fa-user fa-fw w3-margin-right"></i>À PROPOS</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-theme w3-hover-text-theme"><i class="fa fa-user fa-fw w3-margin-right"></i>CONTACT</a>
+        <p class="w3-bar-item w3-padding"><i class="fa fa-list fa-fw w3-margin-right"></i>LISTE :</p>
+      </div>
+      <div id="listItem" style="margin-left:25px;">
+          <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hover-theme w3-hover-text-theme"><i class="fa fa-caret-right w3-margin-right"></i>TEST Item #1</a>
+      </ul>
+    </div>
+    <br>
+  </nav>-->
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <!--<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>-->
+
+  <!-- PAGE CONTENT -->
+  <div class="w3-main" style="margin-left:0px">
+
+    <!-- Header (bouton menu qui apparait si l'affichage n'est pas très large)-->
+    <!--<span class="w3-button w3-hide-large w3-xxlarge w3-hover-theme" onclick="w3_open()"><i class="fa fa-bars"></i></span>-->
+
+    <!-- NavBar  -->
+    <div class="w3-bar w3-theme-dark">
+
+      <!-- BOUTON AFFICHER TOUS LES ARTICLES -->
+      <button id="AllArticles" onclick="afficheContenuPageArticles(this)" class="w3-bar-item w3-hover-theme w3-button w3-margin w3-text-theme"><i class="fa fa-list w3-margin-right"></i>Afficher tous les articles</button>      
+
+      <!-- BOUTON CONTACT -->
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-theme w3-margin w3-text-theme w3-right"><i class="fa fa-user fa-fw w3-margin-right"></i>Contact</a>
+
+      <!-- BOUTON A PROPOS -->
+      <a href="#about" class="w3-bar-item w3-button w3-hover-theme w3-margin w3-text-theme w3-right"><i class="fa fa-user fa-fw w3-margin-right"></i>À propos</a>
+
+    </div><!-- NavBar  -->
+
+
+    <!-- ARTICLES AFFICHÉS -->
+    <div class="w3-container w3-theme-d3 w3-text-theme w3-center">
+      <h2 id="currentDisplay">Titre</h2>
+    </div> 
+
+
+    <!-- CARD DES ARTICLES -->
+    <div id="articlesCard" class="w3-container w3-center w3-margin"></div>
+
+
+    <!-- MODAL DES PHOTOS -->
+    <div id="articleModal" class="w3-modal" onclick="this.style.display='none'">
+      <div id="articleDetail" class="w3-modal-content w3-card-4 w3-animate-zoom">
+        <div class="w3-bar w3-padding w3-theme-l4 w3-topbar w3-bottombar w3-border-teal">
+          <div class="w3-bar-item">
+            <img id="articleDetailImage" src="images/no_image.jpg" alt="image_article" style="height:400px;">
+          </div>
+          <div class="w3-bar-item" style="width:60%">
+            <h3 id="articleDetailTitre">Titre Article</h3>
+            <p id="articleDetailAuteur" class="w3-opacity"></p>
+            <p id="articleDetailDesc"></p>
+            <h6><i>Catégorie : <span id="articleDetailCategorie"></span></i></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ABOUT -->
+    <div class="w3-theme-l1" style="padding-bottom:16px;">
+      <div id="about" class="w3-theme-d4 w3-container">
+        <h3 class="w3-margin"><b>À propos de nous !</b></h3>
+      </div>
+      <hr>     
+      <p class="w3-margin">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+        Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+        Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+        Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+      </p>
+      <hr>
+      <div id="contact" class="w3-theme-d4 w3-container">
+        <h3 class="w3-margin"><b>Contact</b></h3>
+      </div>
+      <div id="info_perso">        
+          <hr>          
+          <h4 class="w3-opacity w3-padding w3-margin">Par téléphone : <b>514-767-2943</b></h4>
+          <h4 class="w3-opacity w3-padding w3-margin">Par courriel : <b>stephantasy@hotmail.com</b></h4>
+          <hr class="w3-theme-d5">
+      </div>    
+    </div>
+
+
+    
+    <!-- FOOTER -->
+    <div id="footer" class="w3-container w3-theme-dark w3-center w3-padding">
+      <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | 
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+
+      <!-- Bouton Pour remonter -->
+      <div style="position:relative;bottom:10px;z-index:1;" class="w3-right">   
+        <a class="w3-button w3-hover-theme" href="#hautPage">
+          <span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span>
+        </a>
+      </div>
+    </div>
+
+  </div><!-- !PAGE CONTENT! -->
+
+</body>
+</html>

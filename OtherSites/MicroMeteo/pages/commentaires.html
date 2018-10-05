@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Stéphane Barthélemy -->
+<html lang="fr">
+	<head>
+		<!-- TITRE -->
+		<title>Micro-Meteo</title>
+		<!-- META -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- Style lié (fichier externe) -->	
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</head>
+	<body>
+	
+		<!-- CONTENEUR -->
+		<div id="conteneur">
+		
+			<!-- ENTÊTE -->
+			<div id="entete">
+				<img src="../images/nuages_708.jpg" alt="image_fond" />
+				<div class="TitreJaune">MÉTÉO</div>	
+			</div>
+			
+			<!-- NAVIGATION -->
+			<div id="navigation">
+				<table>
+					<tr>
+						<td><a href="../index.html">Accueil</a></td>
+						<td><a href="previsions.html">Prévisions</a></td>
+						<td><span style="color: blue;">Commentaires</span></td>
+					</tr>
+				</table>
+			</div>
+			
+			<!-- CORPS -->
+			<div id="corps">
+				<p>Envoyez-nous vos commentaires&nbsp;!</p>
+				<div class="form_style">			
+					<form method="post" action="http://www.iro.umontreal.ca/~pilona/cgi-bin/pilona.cgi">
+						<table>
+							<tr>
+								<td class="tabAlignTop">Nom</td>
+								<td><input type="text" name="nom"></td>
+							</tr>
+							<tr>
+								<td class="tabAlignTop">Adresse</td>
+								<td><input type="text" name="addresse"></td>
+							</tr>
+							<tr>
+								<td class="tabAlignTop">Commentaire</td>
+								<td><textarea name="commentaires" rows="5" cols="40"></textarea></td>
+							</tr>							
+						</table>
+						<input type="submit" value="Envoyer"> <input type="reset" value="Effacer">
+					</form>
+				</div>
+			</div>
+			
+			<!-- PIED DE PAGE -->
+			<div id="piedpage">
+				<table>
+					<tr>
+						<td class="tabAlignTop" rowspan="2"><a href="http://validator.w3.org/check?uri=referer"><img src="../images/valid_html_blue.png" alt="Validation HTML" /></a></td>
+						<td>Stéphane Barthélemy</td>						
+						<td class="tabAlignTop" rowspan="2"><a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="../images/valid_css_blue.png" alt="Validation CSS" /></a></td>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
