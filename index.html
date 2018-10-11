@@ -5,10 +5,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link href="styles/w3.css" rel="stylesheet" type="text/css" media="all">
+	<link href="styles/w3-colors-signal.css" rel="stylesheet" type="text/css" media="all">
 	<link href="styles/layout.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
 </head>
 
-<body id="top">
+<body id="top" onload="onPageLoad();">
 
 <!-- ################################################################################################ -->
 <!-- Top Background Image Wrapper -->
@@ -28,7 +30,7 @@
           <li><a class="drop" href="#Achievements">Achievements</a>
             <ul>
               <li><a href="#MyGames">Games</a></li>
-              <li><a href="#MyWebSites">Web Sites</a></li>
+              <li><a href="#MyWebSites">Webites</a></li>
               <li><a href="#MyArticles">Articles</a></li>
               <li><a href="#MyApplications">Android Applications</a></li>
               <li><a href="#MyVideos">Videos</a></li>
@@ -87,7 +89,7 @@
   
     
 <!-- ################################################################################################ -->
-<!-- REALISATION -->
+<!-- INTRODUCTION -->
 <div id="Introduction" class="wrapper bgded overlay" style="background-image:url('images/backgrounds/02.png')">
   <article class="hoc container clear center"> 
     <!-- ################################################################################################ -->
@@ -98,7 +100,7 @@
     <div class="clear"></div>
   </article>
 </div>
-<!-- End REALISATION -->
+<!-- End INTRODUCTION -->
 <!-- ################################################################################################ --> 
   
   
@@ -158,63 +160,64 @@
 <!-- ################################################################################################ -->  
 
 
-<div class="wrapper row3">
+<div class="wrapper row4">
   <main class="hoc container clear"> 
     <!-- main body -->    
     <div class="content"> 
       <div id="comments">
 	  <!-- GAMES ################################################################################################ -->
-	  <div id="MyGames">
-        <h2>Games</h2>
-        <ul>
-          <li class="w3-card-4">
-            <article>
+	  <div id="MyGames" class="w3-card-4 w3-padding coloured">
+        <h2 class="toggleTheTag">Games<img class="avatar-light" src="images/arrowUpIcon.png" alt=""></h2>
+        <ul class="TagToToggle">
+          <li class="w3-card-4 w3-white">
+            <article class="">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <a class="avatar" href="https://drive.google.com/open?id=0B1KnsHbuaQKOcWVHVnkyQTJHVEU" target="_blank"><img src="images/link2.png" alt=""></a>
                 <span class="boldGold">Cyan</span>
                 <p><b>PC</b></p>
               </header>
               <div class="comcont">
-                <p>Platform Adventure Game. (Demo) (In writing ...)</p>
+                <p>Platformer Adventure Game. You are the young Cyan, troubled by his strange nightmares. Find out what is hidden behind this and who is this terrible soldier... You will have weapons, armor, potions, skills and more to help you during your journey and in completing your quests.</p>
               </div>
 			  <p><i>Visual Studio, SDL, C/C++</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+				<a class="avatar" href="https://play.google.com/store/apps/details?id=com.stephantasy.marblemaboul" target="_blank"><img src="images/link2.png" alt=""></a>
+                <a class="avatar" href="https://www.youtube.com/watch?v=4-ywdLF2bLA" target="_blank"><img src="images/movieIcon.png" alt=""></a>
                 <span class="boldGold">Marble Maboule!</span>
                 <p><b>PC, Android</b></p>
               </header>
               <div class="comcont">
-                <p>Dexterity Puzzle Game. (In writing ...)</p>
+                <p>Dexterity Puzzle Game. You control the marble (on PC) or the device (on Android). You will travel through awesome landscapes full of traps and surprises. Get all crystals on your way and open doors to new levels. Do it as fast as you can and beat the record!</p>
               </div>
 			  <p><i>Unity, Visual Studio, Android, C#</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
-                <span class="boldGold">Small World Escape</span>                
+                <a class="avatar" href="https://drive.google.com/open?id=0B1KnsHbuaQKOZHhiLVVvQndhRHc" target="_blank"><img src="images/link2.png" alt=""></a>
+                <span class="boldGold">Small World Escape</span>
                 <p><b>PC</b></p>
               </header>
               <div class="comcont">
-                <p>First Person Exploration Game. (Prototype) (In writing ...)</p>
+                <p>First Person Exploration Game. You are alone on a small island and you have to figure out how to escape from it...</p>
               </div>
 			  <p><i>Unity, Visual Studio, C#</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <a class="avatar" href="https://drive.google.com/open?id=1GWQlTi-WdAjoHEwo0VflFq-W97rMjAx7" target="_blank"><img src="images/link2.png" alt=""></a>
                 <span class="boldGold">Choupette!</span>
                 <p><b>PC</b></p>
               </header>
               <div class="comcont">
-                <p>Platform Game (Prototype) (In writing ...)</p>
+                <p>Platformer game prototype based on Rabidja Game Tutorial (Meruvia.fr).</p>
               </div>
 			  <p><i>Unity, Visual Studio, C#</i></p>
             </article>
@@ -223,111 +226,114 @@
       </div>  
       <!-- End Games ################################################################################################ -->
     <!-- WEB  ################################################################################################ -->
-      <div id="MyWebSites">
-        <h2>Web Site</h2>
-        <ul>
+      <div id="MyWebSites" class="w3-card-4 w3-padding coloured">
+        <h2 class="toggleTheTag">Websites <img class="avatar-light" src="images/arrowUpIcon.png" alt=""></h2>
+        <ul class="TagToToggle">
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
                 <a class="avatar" href="OtherSites/LaLivrairie/index.html" target="_blank"><img src="images/link2.png" alt=""></a>
                 <span class="boldGold">La Livrairie</span>
               </header>
               <div class="comcont">
-                <p> (In writing ...)</p>
+                <p>A prototype for an online sales website, designed as a single-page application.</p>
               </div>
 			  <p><i>HTML, CSS, Javascript, XML</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
                 <a class="avatar" href="OtherSites/Puzzled/index.html" target="_blank"><img src="images/link2.png" alt=""></a>
                 <span class="boldGold">Puzzled</span>
               </header>
               <div class="comcont">
-                <p> (In writing ...)</p>
+                <p>A little puzzle game, just for fun!</p>
               </div>
-			  <p><i>HTML, CSS, Javascript, XML</i></p>
+			  <p><i>HTML, CSS, Javascript</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
-              <header>
-                <a class="avatar" href="OtherSites/VideMaison/index.html" target="_blank"><img src="images/link2.png" alt=""></a>
-                <span class="boldGold">Vide Maison</span>
-              </header>
-              <div class="comcont">
-                <p> (In writing ...)</p>
-              </div>
-			  <p><i>HTML, CSS, Javascript, XML</i></p>
-            </article>
-          </li>
-          <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
                 <a class="avatar" href="OtherSites/Hospital/index.html" target="_blank"><img src="images/link2.png" alt=""></a>
                 <span class="boldGold">Hospital</span>
               </header>
               <div class="comcont">
-                <p> (In writing ...)</p>
+                <p>That one was designed for client data management (here for a hospital)</p>
+              </div>
+			  <p><i>HTML, CSS, Javascript</i></p>
+            </article>
+          </li>
+          <li class="w3-card-4">
+            <article class="w3-white">
+              <header>
+                <a class="avatar" href="OtherSites/VideMaison/index.html" target="_blank"><img src="images/link2.png" alt=""></a>
+                <span class="boldGold">Vide Maison</span>
+              </header>
+              <div class="comcont">
+                <p>I travelled to another country recently and I needed to sell some my stuff...</p>
               </div>
 			  <p><i>HTML, CSS, Javascript, XML</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
                 <a class="avatar" href="OtherSites/MicroMeteo/index.html" target="_blank"><img src="images/link2.png" alt=""></a>
                 <span class="boldGold">Micro-Meteo</span>
               </header>
               <div class="comcont">
-                <p> (In writing ...)</p>
+                <p>A very small website with weather forecast for towns you probably would never go!</p>
               </div>
-			  <p><i>HTML, CSS, Javascript, XML</i></p>
+			  <p><i>HTML, CSS</i></p>
             </article>
           </li>
         </ul>
       </div>  
       <!-- End Web ################################################################################################ -->
     <!-- ARTICLES ################################################################################################ --> 
-      <div id="MyArticles">
-        <h2>Articles (In French)</h2>
-        <ul>
+      <div id="MyArticles" class="w3-card-4 w3-padding coloured">
+        <h2 class="toggleTheTag">Articles (In French) <img class="avatar-light" src="images/arrowUpIcon.png" alt=""></h2>
+        <ul class="TagToToggle">
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
-                <span class="boldGold">Créez votre application Android avec Android Studio</span>
+                <a class="avatar" href="https://meruvia.fr/index.php/programmation/11-android" target="_blank"><img src="images/link2.png" alt=""></a>
+                <span class="boldGold">Create your Android Application</span>
                 <p><b>Meruvia.fr</b></p>
               </header>
               <div class="comcont">
-                <p>Créez votre application Android avec Android Studio. # Réservé Premium # (In writing ...)</p>
+                <p>Create your first Android Application with Android Studio.</p>
+				<p># Reserved for Premium members #</p>
               </div>
 			  <p><i>Android Studio, Android, Java</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
-                <span class="boldGold">Concevoir un gestionnaire de cinématique</span>
+                <a class="avatar" href="https://meruvia.fr/index.php/programmation/16-big-tuto-c-sfml-2-action-rpg-partie-2-experts/88-big-tuto-action-rpg-2-expert-chapitre-2-cinematiques-1" target="_blank"><img src="images/link2.png" alt=""></a>
+                <span class="boldGold">Create a Cinematic Manager</span>
                 <p><b>Meruvia.fr</b></p>
               </header>
               <div class="comcont">
-                <p>Concevoir un gestionnaire de cinématique. # Réservé Premium # (In writing ...)</p>
+                <p>Learn how to program and integrate a Cinematic Manager into your game. Then, use tools that make easy creation and modification of your own cutscenes without modifying a single line of code!</p>
+				<p># Reserved for Premium members #</p>
               </div>
 			  <p><i>Visual Studio, SDL2, C/C++</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
-                <span class="boldGold">Gestion des pentes dans un jeu de plateformes</span>
+                <a class="avatar" href="https://meruvia.fr/index.php/programmation/22-big-tuto-sdl-2-0/154-big-tuto-sdl-2-chapitre-21-ajoutons-des-pentes" target="_blank"><img src="images/link2.png" alt=""></a>
+                <span class="boldGold">Slopes in a Tile-Based Game</span>
                 <p><b>Meruvia.fr</b></p>
               </header>
               <div class="comcont">
-                <p>Gestion des pentes dans un jeu de plateformes. # Réservé Premium # (In writing ...)</p>
+                <p>How to add and cope with slopes in a tile-based platformer game.</p>
+				<p># Reserved for Premium members #</p>
               </div>
 			  <p><i>Visual Studio, SDL2, C/C++</i></p>
             </article>
@@ -336,57 +342,57 @@
       </div>  
       <!-- End Articles ################################################################################################ -->
     <!-- APPLICATION  ################################################################################################ -->
-      <div id="MyApplications">
-        <h2>Android Applications</h2>
-        <ul>
+      <div id="MyApplications" class="w3-card-4 w3-padding coloured">
+        <h2 class="toggleTheTag">Android Applications <img class="avatar-light" src="images/arrowUpIcon.png" alt=""></h2>
+        <ul class="TagToToggle">
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <a class="avatar" href="https://play.google.com/store/apps/details?id=com.barthste.sysres&hl=fr" target="_blank"><img src="images/link2.png" alt=""></a>
                 <span class="boldGold">SysRes</span>
                 <p><b>Android</b></p>
               </header>
               <div class="comcont">
-                <p>A prototype of Room Reservation for the University of Montreal. (In writing ...)</p>
+                <p>A prototype of Room Reservation for the University of Montreal.</p>
               </div>
 			  <p><i>Android Studio, Android, Java, SQL, XML</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <!--<a class="avatar" href="#"><img src="images/link2.png" alt=""></a>-->
                 <span class="boldGold">AppWebView</span>
                 <p><b>Android</b></p>
               </header>
               <div class="comcont">
-                <p>News Application on Video-Game (french news) (In writing ...)</p>
+                <p>News Application on Video-Game (french news). (Needs to be deployed on Google Store)</p>
               </div>
 			  <p><i>Android Studio, Android, Java</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <a class="avatar" href="https://play.google.com/store/apps/details?id=com.stephantasy.tictactoe&hl=fr" target="_blank"><img src="images/link2.png" alt=""></a>
                 <span class="boldGold">My Little 3T</span>
                 <p><b>Android</b></p>
               </header>
               <div class="comcont">
-                <p>A Tic Tac Toe game. (In writing ...)</p>
+                <p>A Tic Tac Toe game developed for the article "How to make a Android Application with Android Studio". (See the articles section)</p>
               </div>
 			  <p><i>Android Studio, Android, Java</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <!--<a class="avatar" href="#"><img src="images/link2.png" alt=""></a>-->
                 <span class="boldGold">ID Cards</span>
                 <p><b>Android</b></p>
               </header>
               <div class="comcont">
-                <p>Identity Cards manager (In writing ...)</p>
+                <p>Identity Cards manager... (Needs to be deployed on Google Store)</p>
               </div>
 			  <p><i>Android Studio, Android, Java</i></p>
             </article>
@@ -395,84 +401,84 @@
       </div>  
       <!-- End Application ################################################################################################ -->
     <!-- VIDEOS  ################################################################################################ -->
-      <div id="MyVideos">
-        <h2>Videos</h2>
-        <ul>
+      <div id="MyVideos" class="w3-card-4 w3-padding coloured">
+        <h2 class="toggleTheTag">Videos <img class="avatar-light" src="images/arrowUpIcon.png" alt=""></h2>
+        <ul class="TagToToggle">
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <a class="avatar" href="#"><img src="images/movieIcon.png" alt=""></a>
                 <span class="boldGold">Saisons</span>
               </header>
               <div class="comcont">
-                <p>Animation project with Unity. (In writing ...)</p>
+                <p>Animation project with Unity and Flux assets.</p>
               </div>
-			  <p><i>Visual Studio, Unity, Photoshop, C#</i></p>
+			  <p><i>Unity, Photoshop, Visual Studio, C#</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <a class="avatar" href="#"><img src="images/movieIcon.png" alt=""></a>
                 <span class="boldGold">Marble Maboule! Trailer</span>
               </header>
               <div class="comcont">
-                <p> Trailer of the Marble Maboule! game. (In writing ...)</p>
+                <p> Trailer of the "Marble Maboule!" game.</p>
               </div>
-			  <p><i>Visual Studio, SDL, C, C++</i></p>
+			  <p><i>Adobe Premiere Pro</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <a class="avatar" href="#"><img src="images/movieIcon.png" alt=""></a>
                 <span class="boldGold">Chewbacca Go Back Home</span>
               </header>
               <div class="comcont">
-                <p>A home made Star Wars trailer (In writing ...)</p>
+                <p>A home made Star Wars trailer... Just for fun!</p>
               </div>
-			  <p><i>Visual Studio, SDL, C, C++</i></p>
+			  <p><i>Adobe Premiere Pro, Photoshop</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <a class="avatar" href="#"><img src="images/movieIcon.png" alt=""></a>
                 <span class="boldGold">La Malbouffe</span>
               </header>
               <div class="comcont">
-                <p>Announce about jun food (In writing ...)</p>
+                <p>Announce about junk food</p>
               </div>
-			  <p><i>Visual Studio, SDL, C, C++</i></p>
+			  <p><i>Adobe Premiere Pro, Photoshop</i></p>
             </article>
           </li>
         </ul>
       </div>  
       <!-- End Videos ################################################################################################ -->
     <!-- MISC  ################################################################################################ -->
-      <div id="MyMisc">
-        <h2>Miscellaneous</h2>
-        <ul>
+      <div id="MyMisc" class="w3-card-4 w3-padding coloured">
+        <h2 class="toggleTheTag">Miscellaneous <img class="avatar-light" src="images/arrowUpIcon.png" alt=""></h2>
+        <ul class="TagToToggle">
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <!--<a class="avatar" href="#"><img src="images/link2.png" alt=""></a>-->
                 <span class="boldGold">Monitoring system with remote control</span>
               </header>
               <div class="comcont">
-                <p> (In writing ...)</p>
+                <p>A monitoring and control system designed to monitor premises. When an intruder was detected, a video was recorded and an email was sent to the supervisor. At any time, the system could be controlled by a remote PC.</p>
               </div>
 			  <p><i>VB6</i></p>
             </article>
           </li>
           <li class="w3-card-4">
-            <article>
+            <article class="w3-white">
               <header>
-                <a class="avatar" href="#"><img src="images/link2.png" alt=""></a>
+                <!--<a class="avatar" href="#"><img src="images/link2.png" alt=""></a>-->
                 <span class="boldGold">Fire detection system in TGV</span>
               </header>
               <div class="comcont">
-                <p> (In writing ...)</p>
+                <p>A fire detection system. This prototype was designed for TGVs. There was a control station with fire and smoke detectors in the locomotive, and a distant station to manage status and alarms. Data were sent by GSM.</p>
               </div>
 			  <p><i>Siemens S7-200, Micro-Win, C++, Ladder, VB6</i></p>
             </article>
@@ -638,7 +644,8 @@
 
 
 <!-- JAVASCRIPTS -->
-<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/mywebsite.js"></script>	
 <!-- JAVASCRIPTS -->
 
 </body>	

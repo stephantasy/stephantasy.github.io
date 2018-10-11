@@ -3,4 +3,6 @@
 - Remplir la section WIP (les "Read More...")
 - Remplir la section ABOUT
 - Créer un XML pour les réalisations et les charger avec du Javascript !
+- Traduire le site en Français
+- Ajouter la fonctionnalité : Langue
 
