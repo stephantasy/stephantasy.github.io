@@ -1,8 +1,11 @@
-- Remplir la section PRESENTATION
-- Remplir la section REALISATION
-- Remplir la section WIP (les "Read More...")
-- Remplir la section ABOUT
-- Créer un XML pour les réalisations et les charger avec du Javascript !
+ - Déplacer les Certifications vers une page PERSO
+ - Ajouter page PERSO : 
+	- Lien vers LinkedIn
+	- Certifications
+	- Études (avec programme et résultats)
+
+
+- Créer un XML pour les réalisations, certifications, etc. et les charger avec du Javascript !
 - Traduire le site en Français
 - Ajouter la fonctionnalité : Langue
 
