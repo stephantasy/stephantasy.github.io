@@ -316,6 +316,10 @@ table a, #comments a{background-color:inherit;}
 --------------------------------------------------------------------------------------------------------------- */
 .boldGold {font-weight:bold; font-size: large; color:#808000;}
 #comments .avatar-light{float:right; margin:0 0 0px 0px; padding:0px;}
+#footer textarea{border-color:transparent;}
+#footer textarea{color:#FFFFFF; background-color:#1A1A1A;}
+#footer textarea:focus{border-color:#b3b300;}
+#footer textarea{display:block; width:100%; padding:8px;}
 
 /* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */

@@ -664,7 +664,7 @@
 <div id="About" class="wrapper row4">
   <footer id="footer" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <div class="one_third first">
+    <div class="one_half first">
       <h6 class="heading">Vitae commodo praesent</h6>
       <ul class="nospace btmspace-30 linklist contact">
         <li><i class="fa fa-map-marker"></i>
@@ -684,33 +684,16 @@
         <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
       </ul>
     </div>
-    <div class="one_third">
-      <h6 class="heading">Laoreet diam non tempus</h6>
-      <ul class="nospace linklist">
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">Lacus dui bibendum ut</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-            <p class="nospace">Turpis cum sociis natoque penatibus et magnis dis parturient montes&hellip;</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">Felis at malesuada facilisis</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-            <p class="nospace">Nascetur ridiculus mus integer feugiat pulvinar leo ut sodales quam&hellip;</p>
-          </article>
-        </li>
-      </ul>
-    </div>
-    <div class="one_third">
+    <div class="one_half">
       <h6 class="heading">Convallis cum natoque</h6>
       <p class="nospace btmspace-30">Penatibus et magnis dis parturient montes nascetur ridiculus curabitur.</p>
       <form method="post" action="#">
         <fieldset>
           <legend>Newsletter:</legend>
-          <input class="btmspace-15" type="text" value="" placeholder="Name">
-          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <input id='contactName' name='contactName' class="btmspace-15" type="text" value="" placeholder="Name">
+          <input id='contactMail' name='contactMail' class="btmspace-15" type="text" value="" placeholder="Email">
+          <input id='contactSubject' name='contactSubject' class="btmspace-15" type="text" value="" placeholder="Subject">
+          <textarea id='contactMessage' name='contactMessage' class="btmspace-15" rows='4' value="" placeholder="Message"></textarea>
           <button type="submit" value="submit">Submit</button>
         </fieldset>
       </form>
