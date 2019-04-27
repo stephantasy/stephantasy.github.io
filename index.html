@@ -7,6 +7,7 @@
 	<link href="styles/w3.css" rel="stylesheet" type="text/css" media="all">
 	<link href="styles/w3-colors-signal.css" rel="stylesheet" type="text/css" media="all">
 	<link href="styles/layout.css" rel="stylesheet" type="text/css" media="all">
+	<link href="styles/styles.css" rel="stylesheet" type="text/css" media="all">
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
 </head>
 
@@ -26,7 +27,7 @@
       <nav id="mainav" class="fl_right">
         <ul class="clear">
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#Presentation">Introduction</a></li>
+          <li><a href="#Introduction">Introduction</a></li>
           <li><a class="drop" href="#Achievements">Achievements</a>
             <ul>
               <li><a href="#MyGames">Games</a></li>
@@ -39,7 +40,7 @@
           </li>
           <li><a href="#WorkInProgress">In progress</a></li>
           <li><a href="#Certifications">Certifications</a></li>
-          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
       <!-- ################################################################################################ -->
@@ -514,7 +515,7 @@
     <!-- ################################################################################################ -->
     <p class="nospace font-x1">***</p>
     <h2 class="heading font-x3">Work in progress</h2>
-    <q>Whatever happens, he will be released! Well I think...</q><i> - Me -</i>
+    <q>Whatever happens, it will be released! Well I think...</q><i> - Me -</i>
     <!-- ################################################################################################ -->
     <div class="clear"></div>
   </article>
@@ -661,7 +662,7 @@
 <!-- ################################################################################################ -->
 
 <!-- ################################################################################################ -->
-<div id="About" class="wrapper row4">
+<div id="Contact" class="wrapper row4">
   <footer id="footer" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div class="one_half first">
@@ -676,18 +677,15 @@
         <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
       </ul>
       <ul class="faico clear">
-        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+        <li><a class="faicon-facebook" href="https://fr-fr.facebook.com/Stephantasy-123969771653769/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-youtube" href="https://www.youtube.com/channel/UCjwIzwD8Xdcq3UaZJpBDmOA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        <li><a class="faicon-linkedin" href="https://www.linkedin.com/in/st%C3%A9phane-barth%C3%A9lemy-52a2187a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </div>
     <div class="one_half">
       <h6 class="heading">Convallis cum natoque</h6>
       <p class="nospace btmspace-30">Penatibus et magnis dis parturient montes nascetur ridiculus curabitur.</p>
-      <form method="post" action="#">
+      <form onSubmit="return submitMail(this);">
         <fieldset>
           <legend>Newsletter:</legend>
           <input id='contactName' name='contactName' class="btmspace-15" type="text" value="" placeholder="Name">
@@ -703,18 +701,23 @@
 </div>
 <!-- ################################################################################################ -->
 
-  
-  <!-- ################################################################################################ -->
-  <!-- COPYRIGHT + CHECK HTML/CSS -->
-	<div class="wrapper row5">
-	  <div id="copyright" class="hoc clear"> 
-		<!-- ################################################################################################ -->
-		<p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">stephantasy</a></p>
-		<p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-		<!-- ################################################################################################ -->
-	  </div>
-	</div>
+
+<!-- ################################################################################################ -->
+<!-- COPYRIGHT + CHECK HTML/CSS -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
 	<!-- ################################################################################################ -->
+	<p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">stephantasy</a></p>
+	<p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+	<!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+
+
+<!-- SNACKBAR -->
+<div id="snackbar"></div>
+
 
 
 <!-- JAVASCRIPTS -->

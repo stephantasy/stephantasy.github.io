@@ -9,15 +9,12 @@ function onPageLoad(){
 	
 }
 
-
 // Hide/Show the clicked zone
 $('.toggleTheTag').on({
     'click': function() {
 		toogleIt(this);
     }
 });
-
-
 
 // Hide/Show the zone
 function toogleIt(zone){
@@ -32,4 +29,19 @@ function toogleIt(zone){
 
 	// Toggle the zone
 	$(zone).parent().find('.TagToToggle').first().toggle();
+}
+
+// Submit mail TEMP
+function submitMail(zone){
+	//alert("Sorry, not implemented yet.");
+	dipslaySnackbar("Sorry, not implemented yet!");
+	return false;
+}
+
+// Apparition de la Snackbar
+function dipslaySnackbar(msg) {
+  var x = document.getElementById("snackbar");
+  x.innerHTML = msg;
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
